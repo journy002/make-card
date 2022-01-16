@@ -1,0 +1,23 @@
+@value makerGreen, makerWhite from '../../common/colors.css';
+h1 {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.3em 1em;
+    background-color: makerGreen;
+}
+
+.logo {
+    margin-bottom: 0.8em;
+    width: 2em;
+}
+
+.title {
+    font-size: 1rem;
+    color: makerWhite;
+}

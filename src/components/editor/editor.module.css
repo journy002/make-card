@@ -1,0 +1,13 @@
+@value makerLight from '../../common/colors.css';
+
+.editor {
+    padding: 0.5em 2em;
+    flex-basis: 50%;
+    border-right: 1px solid red;
+    background-color: gainsboro;
+    overflow-y: auto;
+}
+
+.title {
+    margin-bottom: 1em;
+}

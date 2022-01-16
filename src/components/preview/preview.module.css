@@ -1,0 +1,6 @@
+.preview {
+    padding: 0.5em 2em;
+    flex-basis: 50%;
+    background-color: skyblue;
+    overflow-y: auto;
+}

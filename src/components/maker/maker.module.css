@@ -1,0 +1,17 @@
+@value makerWhite from '../../common/colors.css';
+
+.maker {
+    display: flex;
+    flex-direction: column;
+    max-width: 80rem;
+    width: 100%;
+    height: 100%;
+    background-color: makerWhite;
+}
+
+.card__container {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+    text-align: center;
+}
