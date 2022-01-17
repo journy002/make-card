@@ -7,45 +7,48 @@ import Preview from '../preview/preview';
 
 function Maker() {
 
-    const [cards, setCards] = useState({
-        1: {
+    const [cards, setCards] = useState([
+        {
+            id: 1,
             name: 'munseok',
             company: 'naver',
             theme: 'dark',
-            title: 'Frontend engineer',
+            title: 'frontend engineer',
             email: 'journy002@naver.com',
-            message: 'Fighting you can do it!',
+            message: 'get it',
             fileName: null,
             fileURL: null,
         },
-        2: {
+        {
+            id: 2,
             name: 'munseok',
             company: 'naver',
             theme: 'dark',
-            title: 'Frontend engineer',
+            title: 'frontend engineer',
             email: 'journy002@naver.com',
-            message: 'Fighting you can do it!',
+            message: 'get it',
             fileName: null,
             fileURL: null,
         },
-        3: {
+        {
+            id: 3,
             name: 'munseok',
             company: 'naver',
             theme: 'dark',
-            title: 'Frontend engineer',
+            title: 'frontend engineer',
             email: 'journy002@naver.com',
-            message: 'Fighting you can do it!',
+            message: 'get it',
             fileName: null,
             fileURL: null,
         },
-    })
+    ])
 
     return (
         <div className={styles.maker}>
             <Header/>
             <div className={styles.card__container}>
-                <Editor cards={cards}/>
-                <Preview/>
+                <Editor />
+                <Preview cards={cards} />
             </div>
             <Footer/>
         </div>
