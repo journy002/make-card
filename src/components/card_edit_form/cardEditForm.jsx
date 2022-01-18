@@ -13,6 +13,7 @@ function CardEditForm({ FileInput, card, onUpdate }) {
   const emailRef = useRef();
   const messageRef = useRef();
 
+  // 이미지 파일 변경
   const onFileChange = (file) => {
     onUpdate({
       ...card,
@@ -22,7 +23,7 @@ function CardEditForm({ FileInput, card, onUpdate }) {
     console.log(file, "file");
   };
 
-  // card의 name, value값 업데이트 로직
+  // card의 name, value값 업데이트
   const onChange = (event) => {
     event.preventDefault();
     onUpdate({
