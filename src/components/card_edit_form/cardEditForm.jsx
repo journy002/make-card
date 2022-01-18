@@ -19,6 +19,7 @@ function CardEditForm({ FileInput, card, onUpdate }) {
       fileName: file.name,
       fileURL: file.url,
     });
+    console.log(file, "file");
   };
 
   // card의 name, value값 즉간 반영 이벤트 로직
@@ -82,7 +83,7 @@ function CardEditForm({ FileInput, card, onUpdate }) {
         onChange={onChange}
       />
       <div className={styles.fileInput}>
-        <FileInput />
+        <FileInput name={fileName} onFileChange={onFileChange} />
       </div>
       <Button name="Delete" onFileChange={onFileChange} />
     </form>
