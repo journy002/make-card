@@ -47,7 +47,7 @@ function Maker() {
       <Header />
       <div className={styles.card__container}>
         <Editor cards={cards} />
-        <Preview />
+        <Preview cards={cards} />
       </div>
       <Footer />
     </div>
