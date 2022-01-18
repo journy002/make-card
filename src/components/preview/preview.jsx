@@ -6,8 +6,8 @@ function Preview({ cards }) {
   return (
     <ul className={styles.preview}>
       <h1>Preview</h1>
-      {cards.map((card) => (
-        <Card card={card} />
+      {Object.keys(cards).map((key) => (
+        <Card key={key} card={cards[key]} />
       ))}
     </ul>
   );
