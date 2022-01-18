@@ -22,7 +22,7 @@ function CardEditForm({ FileInput, card, onUpdate }) {
     console.log(file, "file");
   };
 
-  // card의 name, value값 즉간 반영 이벤트 로직
+  // card의 name, value값 업데이트 로직
   const onChange = (event) => {
     event.preventDefault();
     onUpdate({
