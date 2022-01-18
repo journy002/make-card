@@ -1,13 +1,10 @@
 import React from "react";
 import Button from "../button/button";
-import ImageFileInput from "../image_file_input/imageFileInput";
 import styles from "./cardEditForm.module.css";
 
 function CardEditForm({ card }) {
-  const { name, company, theme, title, email, message, fileName, fileURL } =
+  const { name, company, title, theme, email, message, fileName, fileURL } =
     card;
-
-  const onSubmit = () => {};
   return (
     <form className={styles.form}>
       <input
@@ -22,17 +19,17 @@ function CardEditForm({ card }) {
         name="company"
         defaultValue={company}
       />
-      <select className={styles.select} name="theme" defaultValue={theme}>
-        <option defaultValue="dark">dark</option>
-        <option defaultValue="light">light</option>
-        <option defaultValue="colorful">colorful</option>
-      </select>
       <input
         className={styles.input}
         type="text"
         name="title"
         defaultValue={title}
       />
+      <select className={styles.select} name="theme" defaultValue={theme}>
+        <option value="dark">dark</option>
+        <option value="light">light</option>
+        <option value="colorful">colorful</option>
+      </select>
       <input
         className={styles.input}
         type="text"
@@ -44,10 +41,7 @@ function CardEditForm({ card }) {
         name="message"
         defaultValue={message}
       />
-      <div className={styles.fileInput}>
-        <ImageFileInput />
-      </div>
-      <Button name="Delete" onClick={onSubmit} />
+      <Button name="Delete" />
     </form>
   );
 }
