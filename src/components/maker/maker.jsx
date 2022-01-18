@@ -5,7 +5,7 @@ import Header from "../header/header";
 import Editor from "../editor/editor";
 import Preview from "../preview/preview";
 
-function Maker() {
+function Maker({ FileInput }) {
   const [cards, setCards] = useState({
     1: {
       id: 1,
@@ -54,7 +54,7 @@ function Maker() {
     <div className={styles.maker}>
       <Header />
       <div className={styles.card__container}>
-        <Editor cards={cards} onUpdate={onUpdate} />
+        <Editor FileInput={FileInput} cards={cards} onUpdate={onUpdate} />
         <Preview cards={cards} />
       </div>
       <Footer />

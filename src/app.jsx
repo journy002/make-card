@@ -1,11 +1,10 @@
-import styles from './app.module.css';
-import Maker from './components/maker/maker';
+import styles from "./app.module.css";
+import Maker from "./components/maker/maker";
 
-function App() {
-
+function App({ FileInput }) {
   return (
     <div className={styles.container}>
-      <Maker/>
+      <Maker FileInput={FileInput} />
     </div>
   );
 }
