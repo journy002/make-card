@@ -82,6 +82,7 @@ function CardEditForm({ FileInput, card, onUpdate }) {
         name="message"
         defaultValue={message}
         onChange={onChange}
+        maxLength={50}
       />
       <div className={styles.fileInput}>
         <FileInput name={fileName} onFileChange={onFileChange} />

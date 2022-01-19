@@ -10,8 +10,8 @@ function Maker({ FileInput }) {
     1: {
       id: 1,
       name: "Mun Seok",
-      company: "Naver",
-      title: "Frontend engineer",
+      company: "IT Company",
+      title: "Frontend developer",
       theme: "dark",
       email: "journy002@naver.com",
       message: "Go for it",
