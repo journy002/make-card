@@ -33,3 +33,21 @@
 .button:hover {
   opacity: 0.8;
 }
+
+.loading {
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  border: 1px solid makerLightGrey;
+  border-top: 2px solid makerPink;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

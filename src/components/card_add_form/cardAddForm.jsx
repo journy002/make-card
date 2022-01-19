@@ -38,6 +38,7 @@ function CardAddForm({ onUpdate, FileInput }) {
     };
 
     formRef.current.reset();
+    setFile({ fileName: null, fileURL: null });
     onUpdate(card);
   };
 
@@ -83,7 +84,7 @@ function CardAddForm({ onUpdate, FileInput }) {
         placeholder="message"
       />
       <div className={styles.fileInput}>
-        <FileInput onFileChange={onFileChange} />
+        <FileInput name={file.fileName} onFileChange={onFileChange} />
       </div>
       <Button name="Add" onClick={onSubmit} />
     </form>

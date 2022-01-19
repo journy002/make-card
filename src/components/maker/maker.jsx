@@ -18,28 +18,6 @@ function Maker({ FileInput }) {
       fileName: null,
       fileURL: null,
     },
-    2: {
-      id: 2,
-      name: "Daniel",
-      company: "Naver",
-      title: "Frontend engineer",
-      theme: "dark",
-      email: "journy002@naver.com",
-      message: "Go for it",
-      fileName: null,
-      fileURL: null,
-    },
-    3: {
-      id: 3,
-      name: "Ramiel",
-      company: "Naver",
-      title: "Frontend engineer",
-      theme: "dark",
-      email: "journy002@naver.com",
-      message: "Go for it",
-      fileName: null,
-      fileURL: null,
-    },
   });
 
   const onUpdate = (card) => {
